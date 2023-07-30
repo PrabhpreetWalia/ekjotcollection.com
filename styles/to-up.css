@@ -1,0 +1,30 @@
+.to-up{
+    width: 3.5rem;
+    height: 3.5rem;
+    background-color:  rgba(0, 0, 0, 0.705);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    bottom: 6vh;
+    right: 3vw;
+    text-decoration: none;
+}
+
+.to-up--text{
+    color: white;
+    font-size: 3rem;
+
+}
+
+.hide{
+    display: none;
+}
+
+@media screen and (max-width:700px) {
+    .to-up{
+        width: 2.5rem;
+        height: 2.5rem;
+        font-size: 2.5rem;
+    }
+}

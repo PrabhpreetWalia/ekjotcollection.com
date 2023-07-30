@@ -1,0 +1,35 @@
+.heading-big{
+    width: 100%;
+    padding: 0.5rem 0;
+    margin: 1rem 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.heading-big .heading-line{
+    height: 0.2rem;
+    background-color: #cecece;
+    width: 10%;
+    border-radius: 30%;
+}
+
+.heading-big .heading-text{
+    margin: 0 1.5rem;
+    color: var(--primary-color);
+    font-size: 2rem;
+    text-transform: uppercase;
+    text-shadow: 2px 4px 3px rgba(0, 0, 0, 0.281);
+}
+
+@media screen and (max-width:600px) {
+    .heading-big .heading-text{
+        font-size: 1.5rem;
+    }
+}
+@media screen and (max-width:450px) {
+    .heading-big .heading-text{
+        font-size: 1.3rem;
+    }
+}

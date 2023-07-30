@@ -1,0 +1,266 @@
+.carousel--container{
+    position: relative;
+    height: calc(100vh - var(--navbar-height));
+    width: 100%;
+    overflow: hidden;
+}
+
+.carousel--slide-container{
+    display: flex;
+    flex-direction: row;
+}
+
+.carousel--slide-container img{
+    height: calc(100vh - var(--navbar-height));
+    min-width: 100vw;
+    object-fit: cover;
+}
+
+.carousel--slide-container .c-1{
+    object-position: 50% 20%;
+}
+
+.carousel--button-container{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    font-size: 4rem;
+    z-index: 1;
+}
+
+.carousel--button-container .next,.carousel--button-container .prev{
+    padding: 0.3rem 0.7rem;
+    cursor: pointer;
+    background-color: rgba(110, 108, 108, 0.521);
+    backdrop-filter: blur(20px);
+}
+
+
+.red{
+    color: var(--primary-color)
+}
+
+
+.text-unhide{
+    display: block;
+}
+
+.text-hide{
+    display: none;
+}
+
+.carousel--text-container-1{
+    position: absolute;
+    z-index: 1;
+    right: 2vw;
+    bottom: 8vh;
+    color: #fff;
+    font-weight: 400;
+    font-size: 3.5rem;
+    text-transform: uppercase;
+    text-shadow: 2px 4px 3px rgba(0, 0, 0, 0.596);
+}
+
+.carousel--text-container-1 .text1, .carousel--text-container-1 .text2{
+    opacity: 0;
+}
+
+.carousel--text-anim-1{
+    animation: anim1 0.5s 0.6s ease-in forwards;
+}
+
+.carousel--text-anim-2{
+    animation: anim2 0.5s 0.6s ease-in forwards;
+}
+
+
+@keyframes anim1{
+    0%{
+        transform: translateX(-50px);
+        opacity:0;
+    }
+    100%{
+        opacity:1;
+    }
+}
+
+@keyframes anim2{
+    0%{
+        transform: translateX(50px);
+        opacity:0;
+    }
+    100%{
+        opacity:1;
+    }
+}
+
+
+.carousel--text-container-2{
+    position: absolute;
+    z-index: 1;
+    right: 8vw;
+    bottom: 10vh;
+    color: white;
+    font-weight: 400;
+    font-size: 4rem;
+    text-transform: uppercase;
+    text-shadow: 2px 4px 3px rgba(0,0,0,0.3);
+}
+
+.carousel--text-container-2 .text1{
+    padding: 0.5rem;
+    background-color: rgba(0, 0, 0, 0.479);
+    color: var(--primary-color);
+    font-size: 3rem;
+    border: 3px solid var(--primary-color);
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.carousel--text-container-2 .text1:hover{
+    background-color: var(--primary-color);
+    color: #fff;
+}
+.carousel--text-anim-3{
+    animation: anim3 0.3s linear forwards;
+}
+
+
+@keyframes anim3{
+    0%{
+        scale: 0.8;
+    }
+    100%{
+        scale: 1;
+    }
+}
+
+
+.carousel--text-container-3{
+    position: absolute;
+    z-index: 1;
+    right: 1vw;
+    bottom: 8vh;
+    color: white;
+    font-weight: 400;
+    font-size: 4rem;
+    text-transform: uppercase;
+    text-shadow: 2px 4px 3px rgba(0,0,0,0.3);
+
+}
+
+.carousel--text-container-3 .text1{
+    display: block;
+}
+
+.carousel--text-container-3 .text2{
+    position: relative;
+    display: inline;
+}
+
+
+.carousel--text-container-3 .text2::before{
+    content: ' ';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 0.2rem;
+    background-color: var(--primary-color);
+    animation: anim7 0.3s linear 0.5s forwards;
+}
+
+
+
+.carousel--text-anim-5{
+    animation: anim5 0.5s ease-in forwards;
+}
+
+.carousel--text-anim-6{
+    animation: anim6 0.5s ease-in forwards;
+}
+
+
+@keyframes anim5{
+    0%{
+        transform: translateY(-1000px);
+        opacity:0;
+    }
+    100%{
+        opacity:1;
+    }
+}
+
+@keyframes anim6{
+    0%{
+        opacity:0;
+    }
+
+    100%{
+        opacity:1;
+    }
+}
+
+@keyframes anim7{
+    0%{
+        width: 0;
+    }
+    100%{
+        width: 100%;
+    }
+}
+
+
+
+@media screen and (max-width: 900px) {
+
+    .carousel--text-container-1, .carousel--text-container-2, .carousel--text-container-3{
+        font-size: 2.5rem;
+    }
+    .carousel--text-container-2 .text1{
+        font-size: 2.5rem;
+        padding: 0.3rem;
+    }
+}
+
+@media screen and (max-width: 600px) {
+
+    .carousel--container{
+        height: 50vh;
+    }
+
+    .carousel--text-container-1, .carousel--text-container-2, .carousel--text-container-3{
+        font-size: 1.75rem;
+    }
+    .carousel--text-container-2 .text1{
+        font-size: 2rem;
+        padding: 0.2rem;
+    }
+
+    .carousel--text-container-3{
+        bottom: 5vh;
+    }
+    .carousel--text-container-2{
+        bottom: 5vh;
+    }
+
+    .carousel--button-container{
+        font-size: 3rem;
+    }
+
+    .carousel--button-container .prev, .carousel--button-container .next{
+        padding: 0.2rem 0.4rem;
+    }
+
+    .carousel--slide-container .c-1{
+        object-position: 50% 10%;
+    }
+
+    .carousel--slide-container .c-3{
+        object-position: 40% 0%;
+    }
+}

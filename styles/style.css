@@ -1,0 +1,16 @@
+:root{
+    --primary-color: #E58E76;
+    --navbar-height: 13vh;
+    --navbar-height-mobile: 10vh;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+*, *::after, *::before{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}

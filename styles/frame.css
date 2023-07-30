@@ -1,0 +1,75 @@
+#TL, #BR{
+    stroke-dasharray: 338.4266052246094px;
+    stroke-dashoffset: 338.4266052246094px;
+}
+
+#TR, #BL{
+    stroke-dasharray: 338.4266052246094px;
+    stroke-dashoffset: 338.4266052246094px;
+}
+
+.appear #TL,.appear #BR{
+    animation: stroke-fill 0.7s 0s linear forwards;
+}
+
+.appear #TR,.appear #BL{
+    animation: stroke-fill 0.7s 0.7s linear forwards;
+}
+
+
+@keyframes stroke-fill {
+    to{
+        stroke-dashoffset: 0;
+    }
+}
+
+.frame--container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    cursor: default;
+}
+
+.frame{
+    position: relative;
+    display: inline-block;
+}
+.frame--text{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.8rem;
+    color: var(--primary-color);
+    text-align: center;
+    text-transform: uppercase;
+    opacity: 0;
+}
+
+.appear.frame--text{
+    animation: text-unhide 0.7s 0.7s linear forwards;
+}
+
+@keyframes text-unhide {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 100%;
+    }
+}
+
+@media screen and (max-width:700px) {
+    .frame--svg{
+        height: 10rem;
+        width: 10rem;
+    }
+    .frame--text{
+        font-size: 1.5rem;
+    } 
+}

@@ -1,0 +1,129 @@
+.email{
+    background: var(--primary-color);
+    justify-content: center;
+    align-items: center;
+    line-height: 2;
+    text-align: center;
+    color: #fff;
+    padding: 5.5rem;
+    width: 100%;
+}
+
+
+.email--h3{
+    font-size: 2rem;
+    cursor: default;
+}
+
+.email--h1{
+    font-size: 4rem;
+    cursor: default;
+}
+
+.email--p{
+    max-width: 70vw;
+    font-size: 1rem;
+    margin: auto;
+    cursor: default;
+}
+
+.form{
+    display: flex;
+    flex-direction: row ;
+    justify-content: center;
+    padding: 2vh 5vh;
+    padding-top: 5vh;
+    position: absolute;
+    width: 20rem
+
+}
+
+/* form ------email------- */
+
+.form--input{
+    background: none;
+    width:20vw;
+    top: 0;
+    left: 0;
+    border: none;
+    border-bottom:2px solid #fff;
+    padding: .25rem;
+    box-shadow: none;
+    position: relative;
+    align-items: center;
+    color: #fff;
+    font-family: inherit;
+    font-size: inherit;
+    margin-top:5vh ;
+    outline: none;
+}
+
+.form--input:active{
+    box-shadow: none;
+    outline: none;
+    
+}
+.form--input:focus{
+    box-shadow: none;
+    color: #fff;
+    outline: none;
+}
+.form--input::placeholder{
+    color: #fff;
+}
+
+.form--button{
+    background-color:#fff;
+    padding: 6px 30px;
+    border: none;
+    font-size: inherit;
+    font-family: inherit;
+    font-weight: 500;
+}
+.form--button:hover{
+    color: rgb(0, 0, 0);
+    box-shadow: inset 0 0 .15rem .15rem var(--primary-color);
+}
+
+@media only screen and (max-width: 800px) {
+    .email{
+        padding: 2rem;
+    }
+    .email--h1{
+        font-style: italic;
+        font-size: 2rem;
+    }
+    .email--h3{
+        font-style: italic;
+        font-size: 1.2rem;
+    }
+    .email--p{
+        font-size: .8rem;
+        width: 90%;
+    }
+    .form--input{
+        width: auto;
+    }
+    .form--button{
+        padding: 3px 15px;
+    }
+}
+
+@media only screen and (max-width:370px) {
+    .email--h1{
+        font-size: 3rem;
+        line-height: 1;
+        padding:5vh 0;
+    }
+    .email--h3{
+        font-size: 1.3rem;
+        font-weight: 800;
+    }
+    .email--p{
+       min-width:80vw;
+       text-align: center;
+    }
+    .form--button{
+        margin-top: 1rem;
+    }
+}
