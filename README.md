@@ -1,6 +1,4 @@
-﻿# ekjotcollection.com
-
-## About
+﻿## About
 
 ### This mobile friendly website was developed using HTML, CSS, Vanilla JavaScript.
 ### The website was built with variety of animations like scroll onanimations, SVG animations and carousel. 
