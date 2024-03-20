@@ -3,7 +3,7 @@
 ## About
 
 ### This mobile friendly website was developed using HTML, CSS, Vanilla JavaScript.
-### The website was built with variety of animations like scroll onanimations, SVG animations and carousel. All of these animations were written in pure CSS and JavaScript only. 
+### The website was built with variety of animations like scroll onanimations, SVG animations and carousel. 
 
 ## Live Demo
 
@@ -11,3 +11,5 @@
 
 ## Sscreenshots
 
+<img src="./demo-images/home.png" alt="Home Page">
+<img src="./demo-images/jutti.png" alt="Jutti Page">
