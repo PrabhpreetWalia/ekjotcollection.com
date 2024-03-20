@@ -7,7 +7,7 @@
 
 <a href="https://ekjotcollection.vercel.app/" target="_blank">Click Me</a>
 
-## Sscreenshots
+## Screenshots
 
 <img src="./demo-images/home.png" alt="Home Page">
 <img src="./demo-images/jutti.png" alt="Jutti Page">
